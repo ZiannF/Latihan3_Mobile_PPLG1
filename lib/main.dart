@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:latihan3/page1.dart';
+import 'package:latihan3/page2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,10 +33,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      routes: {
-        '/': (context) => page1(),
-        '/page2': (context) => page2()
-      },
+      routes: {'/': (context) => Page1(), '/page2': (context) => Page2()},
       initialRoute: '/',
     );
   }
